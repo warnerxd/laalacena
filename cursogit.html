@@ -37,8 +37,8 @@ orden contenido <h>
 <ol class="git">
     <li class="bt n0"><a href="index.html"><img src="iconos/hacia_atras.png" alt=""></a></li>
     <li class="bt n1"><a href="#1">Instalación</a></li>
-    <li class="bt n2"><a href="#2">Comandos de git consola</a></li>
-    <li class="bt n3"><a href="#3">Comandos git Stages</a></li>
+    <li class="bt n2"><a href="#2">Comandos git</a></li>
+    <li class="bt n3"><a href="#3">Flujo de trabajo git</a></li>
     <li class="bt n4"><a href="#4"></a></li>
     <li class="bt n5"><a href="#5"></a></li>
     <li class="bt n6"><a href="#6"></a></li>
@@ -99,8 +99,9 @@ Se utiliza para eliminar el salto de linea entre sistemas operativos:
 
 <pre>
 
-<h3><a href="#i"><img class="it" class="it" src="iconos/github.png" alt="">  INICIO:</a>Comandos de git consola:</h3>
-<strong>code . : </strong>Abre el editor de texto   .    
+<h3><a href="#i"><img class="it" class="it" src="iconos/github.png" alt="">  INICIO:</a>Comandos git:</h3>
+<h4>Navegacion en la consola</h4>
+<strong>code . : </strong>Abre el editor de texto.    
 <strong>ls : </strong>lista contenido del directorio.
 <strong>ls -a : </strong>lista contenido del directorio incluyendo archivos ocultos.
 <strong>pdw : </strong>lista directorio actual.
@@ -109,8 +110,19 @@ Se utiliza para eliminar el salto de linea entre sistemas operativos:
 <strong>mkdir: </strong>Crear una carpeta.
 <br>
 
-<h4>git init:Crea un repositorio en git</h4>
-<strong>git init :</strong>
+<h4>Comandos git</h4>
+<strong>git init :</strong>Inicia carpeta por defecto.
+<strong>git status : </strong> Estado actual de los archivos en fichero git.
+<strong>git add opcion1 opcion2 ... : </strong>Agrega un archivo .
+<strong>git add . : </strong>Agrega todos los archivos del fichero .
+
+<h4>Mensajes de la consola</h4>
+
+<strong>Untracked files:</strong>Archivos no seguidos.
+<strong>Changes to be committed:</strong>Cambios listos para comprometer .
+
+
+
 
     </pre>
 
@@ -119,9 +131,22 @@ Se utiliza para eliminar el salto de linea entre sistemas operativos:
     <div class="tema" id="3">
 
     <pre>
-    <h3><a href="#i"><img class="it" src="iconos/github.png" alt="">  INICIO:</a>Stages guit</h3>
+    <h3><a href="#i"><img class="it" src="iconos/github.png" alt="">  INICIO:</a>Flujo de trabajo Git</h3>
 
-    <strong>git add: </strong>Agrega un archivo .
+
+    <h4>STAGE</h4>
+    <strong>git add opcion1 opcion2 ... : </strong>Agrega un archívo .
+    <strong>git add . : </strong>Agrega todos los archívos del fichero .
+
+    <h4>COMMIT</h4>
+    <strong>git commit:</strong>Compromete los cambios.
+    <strong>git commit -m "comentario" :</strong>Compromete los cambios, más un comentario.
+    <strong>git log :</strong>Muestra los commit realizados.
+
+    <h4>SERVER</h4>
+
+    
+    
 
 
     </pre>
