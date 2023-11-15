@@ -240,8 +240,8 @@ backdrop-filter: blur(4.8px);
     }
 
     .tarjetal{
-    //display: flex;
-    margin:-26rem -38rem;
+    display: flex;
+    margin:-23rem -38rem;
     padding: 3px;
     width: 35rem;
     height: 89rem;
