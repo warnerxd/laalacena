@@ -151,9 +151,23 @@
 }
 
 
+.bannerdocker{
+    padding: 200px;
+    display: flex;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url(fondo_banners/Docker.jpg);
+    background-repeat: no-repeat;
+
+
+}
+
+.bannerdocker:hover{
 
 
 
+
+}
 /*cursos encabezado principal*/
 
 h1{
@@ -389,6 +403,18 @@ background-image: url(wallpaperp.jpg)
     
 }
 
+.docker{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    list-style-position: outside;
+    list-style:url(iconos_listas/docker.png) outside none;
+
+}
+.docker:hover{
+    
+    
+}
 
 
 
@@ -442,7 +468,7 @@ h3{
 
 }
 
-.it{
+it{
 width: 90px;
 
 }
