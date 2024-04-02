@@ -166,6 +166,22 @@
 
 
 }
+.bannersistemasoperativos{
+    padding: 200px;
+    display: flex;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url(fondo_banners/sistemasoperativos.jpg);
+    background-repeat: no-repeat;
+
+
+}
+
+.bannersistemasoperativos:hover{
+
+
+}
+
 
 
 
@@ -429,6 +445,19 @@ background-image: url(wallpaperp.jpg)
 .ofimatica:hover{
 
 }
+
+.sistemasoperativos{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    list-style-position: outside;
+    list-style:url(iconos_listas/office.png) outside none;
+
+}
+.sistemasoperativos:hover{
+
+}
+
 
 
 
