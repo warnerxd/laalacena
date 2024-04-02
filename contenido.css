@@ -181,6 +181,21 @@
 
 
 }
+.bannerintroduccionalainformatica{
+    padding: 200px;
+    display: flex;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url(fondo_banners/introduccionalainformatica.avif);
+    background-repeat: no-repeat;
+
+
+}
+
+.bannerintroduccionalainformatica:hover{
+
+
+}
 
 
 
@@ -455,6 +470,17 @@ background-image: url(wallpaperp.jpg)
 
 }
 .sistemasoperativos:hover{
+
+}
+.introduccionalainformatica{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    list-style-position: outside;
+    list-style:url(iconos_listas/office.png) outside none;
+
+}
+.introduccionalainformatica:hover{
 
 }
 
