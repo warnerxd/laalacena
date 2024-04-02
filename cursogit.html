@@ -1,0 +1,192 @@
+<!--
+orden contenido <h>
+
+    <h3>titulo secciones
+    
+    <h4>titulos secuandarios
+    
+    <pre>etiqueta de contenido dentro de div
+    
+    <strong>comado : </strong>Descripcion.
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="contenido.css">
+
+    <title>Curso </title>
+
+</head>
+
+<body>
+    
+        <div class="bannergit" id="i">
+        <h2>Curso GUIT</h2>
+        
+        </div>
+<!--MAIN CONTENIDO-->
+
+
+<div class="contenedor">
+
+<ol class="git">
+    <li class="bt n0"><a href="index.html"><img src="iconos/hacia_atras.png" alt=""></a></li>
+    <li class="bt n1"><a href="#1">Instalación</a></li>
+    <li class="bt n2"><a href="#2">Comandos git</a></li>
+    <li class="bt n3"><a href="#3">Flujo de trabajo git</a></li>
+    <li class="bt n4"><a href="#4"></a></li>
+    <li class="bt n5"><a href="#5"></a></li>
+    <li class="bt n6"><a href="#6"></a></li>
+    <li class="bt n7"><a href="#7"></a></li>
+    <li class="bt n8"><a href="#8"></a></li>
+    <li class="bt n9"><a href="#9"></a></li>
+    <li class="bt n10"><a href="#10"></a></li>
+
+</ol>
+
+</div>
+
+<!--MAIN CONTENIDO-->
+<main>
+
+<div class="tema" id="1">
+
+<h3><a href="#i"><img class="it" src="iconos/github.png" alt="">  INICIO:</a>Instalacion y Configuracion git :</h3>
+
+<pre>
+comandos
+
+<strong> --version</strong>
+
+<h4>Ejemplo instalado ok</h4>
+$ git --version
+
+git version 2.42.0.windows.2
+
+<img src="imagenes_git/git configuracion.png">
+
+<h4>Configuración</h4>
+<strong> config --global user.name "nombre"</strong>
+<strong> config --global user.email correo electronico nombre</strong>
+
+<h4>Ejemplo instalado ok</h4>
+*La terminal espera el archivo de configuracion:
+$ git config --global core.editor "code --wait"
+
+El comando nos abre vs code:
+<strong>$ git config --global -e</strong>
+
+<img src="imagenes_git/git configuracion editor.png">
+
+<h4>Configuración core.autocrlf:</h4>
+
+Se utiliza para eliminar el salto de linea entre sistemas operativos:
+
+<strong>$ git config --global core.autocrlf input/true</strong>
+
+<h4>el comando entrega listado de funciones:</h4>
+<strong>git config -h:</strong>
+</pre>
+
+    </div>
+    
+    <div class="tema" id="2">
+
+<pre>
+
+<h3><a href="#i"><img class="it" class="it" src="iconos/github.png" alt="">  INICIO:</a>Comandos git:</h3>
+<h4>Navegacion en la consola</h4>
+<strong>code . : </strong>Abre el editor de texto.    
+<strong>ls : </strong>lista contenido del directorio.
+<strong>ls -a : </strong>lista contenido del directorio incluyendo archivos ocultos.
+<strong>pdw : </strong>lista directorio actual.
+<strong>cd : </strong>Moverse a un directorio.
+<strong>cd .. : </strong>Devolverse a un directorio.
+<strong>mkdir: </strong>Crear una carpeta.
+<br>
+
+<h4>Comandos git</h4>
+<strong>git init :</strong>Inicia carpeta por defecto.
+<strong>git config --global init.defaultBranch main:</strong>Cambia el nombre de la rama principal.
+<strong>git status : </strong> Estado actual de los archivos en fichero git.
+<strong>git add opcion1 opcion2 ... : </strong>Agrega un archivo .
+<strong>git add . : </strong>Agrega todos los archivos del fichero .
+
+<h4>Mensajes de la consola</h4>
+
+<strong>Untracked files:</strong>Archivos no seguidos.
+<strong>Changes to be committed:</strong>Cambios listos para comprometer .
+
+
+
+
+    </pre>
+
+    </div>
+
+    <div class="tema" id="3">
+
+    <pre>
+    <h3><a href="#i"><img class="it" src="iconos/github.png" alt="">  INICIO:</a>Flujo de trabajo Git</h3>
+
+
+    <h4>STAGE</h4>
+    <strong>git add opcion1 opcion2 ... : </strong>Agrega un archívo .
+    <strong>git add . : </strong>Agrega todos los archívos del fichero .
+
+    <h4>COMMIT</h4>
+    <strong>git commit:</strong>Compromete los cambios.
+    <strong>git commit -m "comentario" :</strong>Compromete los cambios, más un comentario.
+    <strong>git rm --cached <file>... :</strong>Retira cambios del commit.
+    <strong>git log :</strong>Muestra los commit realizados.
+    <strong>git log --oneline :</strong>Muestra los commit realizados en una sola linea.
+    <strong>git checkout :</strong>Apunta a un archio o fichero.
+
+    <h4>SERVER</h4>
+
+    
+    
+
+
+    </pre>
+
+    </div>
+
+    <div class="tema" id="4">
+
+    </div>
+
+    <div class="tema" id="5">
+
+    </div>
+
+    <div class="tema" id="6">
+
+    </div>
+
+    <div class="tema" id="7">
+
+    </div>
+
+    <div class="tema" id="8">
+
+    </div>
+
+    <div class="tema" id="9">
+
+    </div>
+
+    <div class="tema" id="10">
+
+    </div>
+
+</main>
+
+</body>
+
+</html>

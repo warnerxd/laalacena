@@ -1,0 +1,524 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*BANNERS*/
+
+.bannerhtml{
+    padding: 200px;
+    display: flex;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url(fondo_banners/html.jpg);
+    background-repeat: no-repeat;
+
+
+}
+
+.bannerhtml:hover{
+
+
+
+}
+
+.bannercss{
+    padding: 200px;
+    display: flex;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url(fondo_banners/css-banner.jpg);
+    background-repeat: no-repeat;
+
+
+}
+
+.bannercss:hover{
+
+
+}
+.bannerjavascript{
+    padding: 200px;
+    display: flex;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url(fondo_banners/javasscript.jpg);
+    background-repeat: no-repeat;
+
+
+}
+
+.bannerjavascript:hover{
+
+
+}
+.bannergit{
+    padding: 200px;
+    display: flex;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url(fondo_banners/git-banner.jpg);
+    background-repeat: no-repeat;
+
+
+}
+
+.bannergit:hover{
+
+}
+.bannerphyton{
+    padding: 200px;
+    display: flex;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url(fondo_banners/Banner-Python.png);
+    background-repeat: no-repeat;
+
+
+}
+
+.bannerphyton:hover{
+
+
+}
+
+.bannerlinux{
+    padding: 200px;
+    display: flex;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url(fondo_banners/linux.jpg);
+    background-repeat: no-repeat;
+
+
+}
+
+.bannerlinux:hover{
+
+
+}
+
+.bannerredes{
+    padding: 200px;
+    display: flex;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url(fondo_banners/redes.jpg);
+    background-repeat: no-repeat;
+
+
+}
+
+.bannerredes:hover{
+
+
+}
+
+
+.bannersql{
+    padding: 200px;
+    display: flex;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url(fondo_banners/sql.jpg);
+    background-repeat: no-repeat;
+
+
+}
+
+.bannersql:hover{
+
+
+}
+
+
+
+.bannermas{
+    padding: 200px;
+    display: flex;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url(fondo_banners/mas.jpg);
+    background-repeat: no-repeat;
+
+
+}
+
+.bannermas:hover{
+
+
+}
+
+
+.bannerofimatica{
+    padding: 200px;
+    display: flex;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url(fondo_banners/ofimatica.jpg);
+    background-repeat: no-repeat;
+
+
+}
+
+.bannerofimatica:hover{
+
+
+}
+
+
+
+
+/*cursos encabezado principal*/
+
+h1{
+    font-size: 120px;
+    text-align:center;
+    color:rgb(175, 172, 172);
+    font-family:fantasy;
+}
+/*titulo*/
+h2{
+    background-color: rgba(19, 88, 88, 0.5);
+    border-radius: 30px;
+    border-width: 15px;
+    padding: 25px;
+    margin-top: 15px;
+    font-size:120px;
+    text-shadow:5px 5px 5px rgba(56, 248, 248, 0.493);
+    transition: 0.8s;
+    font-family: fantasy;
+}
+/*RESALTADOR*/
+h5{
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgba(18, 212, 212, 0.668);
+    
+}
+
+
+
+
+
+/*SECCIONES*/
+
+.bt{
+    display: flex;
+    text-align:center;
+    font-size: 50px;
+    margin: 20px 10px 10px 0px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 30px;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    transition: 0.5s;
+    background-image:linear-gradient(0deg, rgba(46, 92, 110, 0.479),rgba(30, 110, 134, 0.87),rgba(12, 12, 12, 0.322));
+    filter: blur(1.px);
+}
+
+
+.bt:hover{
+    margin: 12px 10px 10px 0px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 33px;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    transition: 0.7s;
+    box-shadow: 0px 5px 5px 5px rgba(17, 39, 46, 0.322);
+    background-image:linear-gradient(0deg, rgba(46, 92, 110, 0.479),rgba(30, 110, 134, 0.87),rgba(12, 12, 12, 0.322));
+    filter: blur(0.2px);
+    
+}
+
+
+/*
+a:hover{
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    background-image:linear-gradient(0deg, rgba(15, 16, 17, 0.767),rgba(37, 73, 83, 0.705),rgba(36, 178, 221, 0.322));
+    transition: 1.2s;
+    filter: blur(0.5px);
+    
+}
+*/
+
+.contenedor{
+    height: 12rem;
+    padding: 0px;
+    border-radius: 5px;
+    border-width: 0px;
+    background-image:linear-gradient(90deg, rgba(15, 16, 17, 0.767),rgba(37, 73, 83, 0.705),rgba(36, 178, 221, 0.322));
+    transition: 1.2s;
+    filter: blur(2.1px);
+
+}
+
+.contenedor:hover{
+border-radius: 10px;
+//background-image:linear-gradient(90deg, rgba(15, 16, 17, 0.767),rgba(37, 73, 83, 0.705),rgba(36, 178, 221, 0.322));   
+transition: 1.2s;
+filter: blur(0.2px);
+    
+
+
+}
+
+
+
+
+/*Cuerpo de la pagina contenidos*/
+
+body{
+background-image: url(wallpaperp.jpg)
+
+}
+
+/*CONTENIDO*/
+
+
+
+.html{
+
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    list-style-position: outside;
+    list-style:url(iconos_listas/html.png) outside none;
+
+}
+.html:hover{
+    
+
+    
+}
+
+.git{
+
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    list-style-position: outside;
+    list-style:url(iconos_listas/git.png) outside none;
+
+}
+.git:hover{
+
+
+    
+}
+
+
+.css{
+
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    list-style-position: outside;
+    list-style:url(iconos_listas/css.png) outside none;
+
+}
+.css:hover{
+    
+    
+}
+.java{
+
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    list-style-position: outside;
+    list-style:url(iconos_listas/js.png) outside none;
+
+}
+.java:hover{
+    
+    
+}
+
+.linux{
+
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    list-style-position: outside;
+    list-style:url(iconos_listas/linux.png) outside none;
+
+}
+.linux:hover{
+    
+    
+}
+
+.redes{
+
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    list-style-position: outside;
+    list-style:url(iconos_listas/redes.png) outside none;
+
+}
+.redes:hover{
+    
+    
+}
+
+
+.sql{
+
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    list-style-position: outside;
+    list-style:url(iconos_listas/sql.png) outside none;
+
+}
+.sql:hover{
+    
+    
+}
+
+.phyton{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    list-style-position: outside;
+    list-style:url(iconos_listas/piton.png) outside none;
+
+}
+.phyton:hover{
+    
+    
+}
+
+
+.mas{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    list-style-position: outside;
+    list-style:url(iconos_listas/mas.png) outside none;
+
+}
+.mas:hover{
+    
+    
+}
+
+
+
+.ofimatica{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    list-style-position: outside;
+    list-style:url(iconos_listas/office.png) outside none;
+
+}
+.ofimatica:hover{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a{
+    text-align:inherit;
+font-size:50px;
+text-decoration: none;
+color: blanchedalmond;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+}
+
+
+
+/*TITULOS H3 CONTENIDO*/
+
+h3{
+    //display:flexbox;
+    //background-image: url(iconos/github.png);
+    //background-repeat: no-repeat;
+    //background-position:top;
+    background-size:2%;
+    font-size: 60px;
+    margin: 0.5%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgba(18, 212, 212, 0.712);
+    text-shadow: 3px 3px 3px cyan;
+
+
+
+}
+
+.it{
+width: 90px;
+
+}
+
+
+h4{
+    font-size: 50px;
+    margin: 70px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgba(18, 212, 212, 0.668);
+    /*text-shadow: 3px 3px black;*/
+
+
+}
+
+
+b{
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgba(18, 212, 212, 0.668);
+    /*text-shadow: 3px 3px black;*/
+
+
+}
+
+
+
+pre{
+    font-size: 45px;
+    margin-left: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: blanchedalmond;
+
+
+}
+
+
+
+

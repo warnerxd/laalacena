@@ -1,0 +1,291 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+}
+
+.titulos{
+margin-top: 1px;
+
+}
+
+/*cursos encabez1do principal*/
+.t1{
+    margin-top: 15px;
+    padding: 25px;
+    border-bottom: 10px;
+    font-size: 100px;
+    text-align:center;
+    color:rgb(175, 172, 172);
+    font-family:fantasy;
+}
+
+
+/*css del div contenedor*/
+
+.contenedor{
+    margin-bottom: 25px;
+    padding: 4.5%;
+    text-align: center;
+    margin-top: -11rem;
+    background-image:linear-gradient(90deg , rgba(223, 23, 12, 0.733));
+    //border-style:outset;
+    border-radius: 150px;
+    background-size: 100%;
+    //background-image: url(banner3.jpg)
+
+
+    }
+
+    .contenedor:hover{
+        text-align: center;
+        //margin-top: 5px;
+        background-image:linear-gradient(90deg , rgba(223, 23, 12, 0.733));
+        //border-style:outset;
+        border-radius: 150px;
+        background-size: 100%;
+        //background-image: url(banner3.jpg)
+    
+    
+        }    
+
+/*caracteriticas de botones en comun*/
+.icon{
+    filter: blur(0.8px);
+width: 150px;  
+border-radius: 0%;
+padding: 10px;
+}
+
+
+/*Boton atras*/
+
+.i11:hover{
+    padding: 5px 5px;
+    width: 70;
+    border-radius: 15px;
+    
+    
+    
+    }
+
+/*boton por separado*/
+
+.icon{
+padding: 5px 5px;
+background-color: rgba(105, 104, 100, 0.156);
+border-width: 10px;
+
+
+}
+
+
+/*Hover boton 1*/
+
+.i1:hover{
+    padding:7px;
+    /*background-color: rgba(35, 136, 204, 0.63);*/
+    background-image:linear-gradient(90deg, rgba(223, 161, 28, 0.918),rgba(223, 176, 22, 0.555),rgba(221, 156, 17, 0.13));
+    border-width: 5px;
+    border-radius: 15px;
+    transition: 0.5s;
+    filter: blur(0.2px);
+}
+.i2:hover{
+    padding:7px;
+    /*background-color: rgba(35, 136, 204, 0.63);*/
+    background-image:linear-gradient(180deg, rgba(103, 153, 161, 0.897),rgba(185, 157, 157, 0.473),rgba(199, 193, 193, 0));
+    border-width: 5px;
+    border-radius: 15px;
+    transition: 0.5s;
+    filter: blur(0.2px);
+} 
+
+.i3:hover{
+    padding:7px;
+    /*background-color: rgba(35, 136, 204, 0.63);*/
+    background-image:linear-gradient(180deg, rgba(223, 238, 18, 0.897),rgba(185, 157, 157, 0.473),rgba(199, 193, 193, 0));
+    border-width: 5px;
+    border-radius: 15px;
+    transition: 0.5s;
+    filter: blur(0.2px);
+}
+
+.i4:hover{
+    padding:7px;
+    /*background-color: rgba(35, 136, 204, 0.63);*/
+    background-image:linear-gradient(180deg, rgba(20, 154, 231, 0.897),rgba(185, 157, 157, 0.473),rgba(199, 193, 193, 0));
+    border-width: 5px;
+    border-radius: 15px;
+    transition: 0.5s;
+    filter: blur(0.2px);
+}
+
+
+.i5:hover{
+    padding:7px;
+    /*background-color: rgba(35, 136, 204, 0.63);*/
+    background-image:linear-gradient(180deg, rgba(13, 15, 15, 0.897),rgba(185, 157, 157, 0),rgba(199, 193, 193, 0));
+    border-width: 5px;
+    border-radius: 15px;
+    transition: 0.5s;
+    filter: blur(0.2px);
+}
+
+
+.i6:hover{
+    padding:7px;
+    /*background-color: rgba(35, 136, 204, 0.63);*/
+    background-image:linear-gradient(180deg, rgba(13, 15, 15, 0.897),rgba(185, 157, 157, 0),rgba(199, 193, 193, 0));
+    border-width: 5px;
+    border-radius: 15px;
+    transition: 0.5s;
+    filter: blur(0.2px);
+}
+
+.i7:hover{
+    padding:7px;
+    /*background-color: rgba(35, 136, 204, 0.63);*/
+    background-image:linear-gradient(180deg, rgba(23, 223, 223, 0.897),rgba(245, 245, 245, 0.11),rgba(199, 193, 193, 0));
+    border-width: 5px;
+    border-radius: 15px;
+    transition: 0.5s;
+    filter: blur(0.2px);
+}
+
+
+.i8:hover{
+    padding:7px;
+    /*background-color: rgba(35, 136, 204, 0.63);*/
+    background-image:linear-gradient(180deg, rgba(220, 223, 23, 0.925),rgba(13, 156, 167, 0.274),rgba(199, 193, 193, 0));
+    border-width: 5px;
+    border-radius: 15px;
+    transition: 0.5s;
+    filter: blur(0.2px);
+}
+
+.i9:hover{
+    padding:7px;
+    /*background-color: rgba(35, 136, 204, 0.63);*/
+    background-image:linear-gradient(90deg, rgba(220, 223, 23, 0.925),rgba(13, 156, 167, 0.274),rgba(199, 193, 193, 0));
+    border-width: 5px;
+    border-radius: 15px;
+    transition: 0.5s;
+    filter: blur(0.2px);
+}
+
+.i10:hover{
+    padding:7px;
+    /*background-color: rgba(35, 136, 204, 0.63);*/
+    background-image:linear-gradient(90deg, rgba(220, 223, 23, 0.925),rgba(13, 156, 167, 0.274),rgba(199, 193, 193, 0));
+    border-width: 5px;
+    border-radius: 15px;
+    transition: 0.5s;
+    filter: blur(0.2px);
+}
+
+/*cuerpo pagina*/
+body{
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url(wallpaperp.jpg)
+    
+    
+
+}
+
+
+
+/*NOTAS*/
+
+.tarjeta{
+    display:flexbox;
+font-size: 30px;
+margin: 1% auto 15px;
+width: 120rem;
+height: 70rem;
+border: 2px solid #fafafa10
+
+
+}
+
+
+.glass{
+
+background: #fafafa10;
+backdrop-filter: blur(4.8px);
+-webkit-backdrop-filter: blur(1.8px);
+
+}
+
+.glass:hover{
+
+    background: #fafafa10;
+    backdrop-filter: blur(0.8px);
+    -webkit-backdrop-filter: blur(0.8px);
+    
+    }
+
+
+    #notas{
+        margin-top: 12px;
+        margin-left:  -95%;
+        font-family:fantasy;
+        text-shadow: 1px 1px 1px cyan;
+
+
+    }
+
+
+/*RECURSOS*/
+
+    #recursos{
+        margin-top: 12px;
+        margin-left: -10%;
+        font-family:fantasy;
+        text-shadow: 1px 1px 1px cyan;
+
+    }
+
+    .tarjetal{
+    display: flex;
+    margin:-23rem -38rem;
+    padding: 3px;
+    width: 35rem;
+    height: 89rem;
+    border: 2px solid #fafafa10
+    }
+
+
+
+    .glassl{
+
+        background: #fafafa10;
+        backdrop-filter: blur(4.8px);
+        -webkit-backdrop-filter: blur(1.8px);
+        
+        }
+        
+        .glassl:hover{
+        
+        background: #fafafa10;
+        backdrop-filter: blur(0.8px);
+        -webkit-backdrop-filter: blur(0.8px);
+            
+            }
+
+
+
+
+
+
+
+
+
+/*LINKS*/
+
+
+
+
+/*Imagenes por separado*/

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="contenido.css">
+
+    <title>Curso </title>
+
+</head>
+
+<body>
+    
+        <div class="bannerlinux" id="i">
+        <h2>Curso LINUX</h2>
+        
+        </div>
+<!--MAIN CONTENIDO-->
+
+
+<div class="contenedor">
+
+<ol class="linux">
+    <li class="bt n0"><a href="index.html"><img src="iconos/hacia_atras.png" alt=""></a></li>
+    <li class="bt n1"><a href="#1">comandos</a></li>
+    <li class="bt n2"><a href="#2"></a></li>
+    <li class="bt n3"><a href="#3"></a></li>
+    <li class="bt n4"><a href="#4"></a></li>
+    <li class="bt n5"><a href="#5">Instalació Arch Linux</a></li>
+    <li class="bt n6"><a href="#6"></a></li>
+    <li class="bt n7"><a href="#7"></a></li>
+    <li class="bt n8"><a href="#8"></a></li>
+    <li class="bt n9"><a href="#9"></a></li>
+    <li class="bt n10"><a href="#10"></a></li>
+
+</ol>
+
+</div>
+
+<!--MAIN CONTENIDO-->
+<main>
+
+    <div class="tema" id="1">
+
+    <h3><a href="#i"><img class="it" src="iconos/icons8-linux-48.png" alt="">  INICIO:</a>Comandos :</h3>
+
+    <pre>
+        <h4>BASH</h4>
+        <strong>Ctrl-Alt-F1 a Crtl-Alt-F6 : </strong>Cambiar de consola.
+        <strong>ls : </strong>lista contenido del directorio.
+        <strong>ls -lss : </strong>Ordena los resultados por tamaño.
+        <strong>ls -t: </strong>Ordena por hora de modificación..
+        <strong>ls -a : </strong>lista contenido del directorio incluyendo archivos ocultos.
+        <strong>pdw : </strong>lista directorio actual.
+        <strong>cd : </strong>Moverse a un directorio.
+        <strong>cd .. : </strong>Devolverse a un directorio.
+        <strong>mkdir: </strong>Crear una carpeta.
+        <strong>file : </strong>Muestra el contenido del archivo .
+
+
+        <h4></h4>
+
+
+        
+        
+        
+
+
+
+    </pre>
+
+    </div>
+    
+    <div class="tema" id="2">
+
+    </div>
+
+    <div class="tema" id="3">
+
+    </div>
+
+    <div class="tema" id="4">
+
+    </div>
+
+    <div class="tema" id="5">
+        <h3><a href="#i"><img class="it" src="iconos/icons8-linux-48.png" alt="">  INICIO:</a>Instalació Arch Linux:</h3>
+
+        <pre>
+            <h4>Link descargar :   <a href="https://archlinux.org/" target="_blank"><img src="imagenes_Linux/icons8-arch-linux-composed-of-nonfree-and-open-source-software-24.png"></a></h4>
+            <h4>WIKI Arch Linux :   <a href="https://wiki.archlinux.org/" target="_blank"><img src="imagenes_Linux/icons8-arch-linux-composed-of-nonfree-and-open-source-software-24.png"></a></h4>
+            <h4>Configuracion teclado:</h4>
+            <strong>loadkeys opcion : </strong>Idioma teclado.
+            <h4>Verificar el modo de arranque:</h4>
+            <strong> # cat /sys/firmware/efi/fw_platform_size : </strong>Verificar el modo de arranque.
+
+            Si el comando devuelve 64, entonces el sistema se inicia en modo <strong>UEFI</strong>    
+            tiene una UEFI IA32 de 32 bits; Si bien esto es compatible, limitará la opción del cargador de arranque a systemd-boot.
+            Si el archivo no existe, es posible que el sistema se inicie en modo <strong>BIOS</strong>  
+            
+            <h4>Conectar a internet:</h4>
+            <strong> # ip link : </strong>Asegúrese de que su interfaz de red esté listada y habilitada, con ip-link.
+            <strong> # ping ip : </strong>La conexión se puede verificar con ping .
+
+            <h4>Actualizar el reloj del sistema:</h4>
+            <strong> # timedatectl : </strong>Utilice timedatectl para garantizar que el reloj del sistema sea preciso:.
+
+            <h4>Particionar los discos:</h4>
+            <strong># fdisk -l : </strong>Cuando el sistema en vivo los reconoce, los discos se asignan a un dispositivo de bloque
+            como /dev/sda, /dev/nvme0n1o /dev/mmcblk0. Para identificar estos dispositivos, utilice <strong>lsblk</strong> o <strong>fdisk </strong>
+
+            <h4>fdisk</h4>
+
+            <strong>fdick /dev/sdx : </strong>Seleccionar disco.
+
+            <h4>Comandos fdisk</h4>
+            <strong> m : </strong>Despliega las opciones del menú.
+            <strong> n : </strong>Nueva partición.
+            <strong> d : </strong>Borra una partición.
+            <strong> p : </strong>Despliega las particiones actuales.
+            <strong> : </strong>.
+            <strong> : </strong>.
+            <strong> I : </strong>Lista los tipos de partición actuales en el sistema.
+            <strong> q : </strong>Sale de fdisk sin guardar las modificaciones.
+            <strong> : </strong>.
+            <strong> : </strong>.
+            <strong> : </strong>.
+
+
+            <h4>Configuracion</h4>
+
+            <h4>Crear Nueva partición</h4>
+            <strong> n: </strong>Nueva partición.
+
+            <h4>Seleccionar tipo partición</h4>
+            <strong> p: </strong>Nueva partición Primaria.
+            <strong> e: </strong>Nueva partición Extendida.
+
+            <h4>Seleccionar numero de partición</h4>
+            A continuación, se pedirá que introduzca el primer número de cilindro
+            o sector de la partición que se va a crear. Puedes pulsar Intro para
+            aceptar los valores predeterminados.
+
+            <h4>Seleccionar tamaño de partición</h4>
+
+            Se pedirá que ingreses el último cilindro o número de sector de la partición
+            que se va a crear. Puedes presionar Enter para usar todo el espacio disponible 
+            después del primer sector o ingresar un tamaño específico como + 2G o + 256M
+            para una partición de 2 gigabytes o 256 megabytes, respectivamente.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+
+            
+            
+            
+
+
+
+        </pre>
+
+    </div>
+
+    <div class="tema" id="6">
+
+    </div>
+
+    <div class="tema" id="7">
+
+    </div>
+
+    <div class="tema" id="8">
+
+    </div>
+
+    <div class="tema" id="9">
+
+    </div>
+
+    <div class="tema" id="10">
+
+    </div>
+
+</main>
+
+</body>
+
+</html>
