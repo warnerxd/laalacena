@@ -217,15 +217,17 @@ h2{
     padding: 25px;
     margin-top: 15px;
     font-size:120px;
-    text-shadow:5px 5px 5px rgba(56, 248, 248, 0.493);
+    text-shadow:5px 5px 5px rgba(28, 200, 65, 0.493);
     transition: 0.8s;
     font-family: fantasy;
 }
 /*RESALTADOR*/
 h5{
-    font-size: 30px;
+    font-size: 50px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:rgba(18, 212, 212, 0.668);
+    color:#21cb70ad;
+    border-left: 15px;
+    margin-left: 100px;
     
 }
 
@@ -526,7 +528,7 @@ h3{
     //background-image: url(iconos/github.png);
     //background-repeat: no-repeat;
     //background-position:top;
-    background-size:2%;
+    /*background-size:2%;*/
     font-size: 60px;
     margin: 0.5%;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -545,13 +547,27 @@ width: 90px;
 
 h4{
     font-size: 50px;
-    margin: 70px;
+    margin: 0px px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:rgba(18, 212, 212, 0.668);
     /*text-shadow: 3px 3px black;*/
 
 
 }
+/*para comandos*/
+h6{
+    border:5px dashed rgba(210, 214, 225, 0.621);
+    background-color: black;
+    font-size: 50px;
+    margin-right:60em;
+    margin-left: 3em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgba(18, 212, 212, 0.668);
+    /*text-shadow: 3px 3px black;*/
+
+
+}
+
 
 
 b{

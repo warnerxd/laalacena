@@ -26,11 +26,15 @@
     <li class="bt n3"><a href="#3"></a></li>
     <li class="bt n4"><a href="#4"></a></li>
     <li class="bt n5"><a href="#5">Instalació Arch Linux</a></li>
-    <li class="bt n6"><a href="#6"></a></li>
+    <li class="bt n6"><a href="#6">Post Instalacion</a></li>
     <li class="bt n7"><a href="#7"></a></li>
     <li class="bt n8"><a href="#8"></a></li>
     <li class="bt n9"><a href="#9"></a></li>
     <li class="bt n10"><a href="#10"></a></li>
+    <li class="bt n11"><a href="#10"></a></li>
+    <li class="bt n12"><a href="#10"></a></li>
+    <li class="bt n13"><a href="#10"></a></li>
+    <li class="bt n14"><a href="#10"></a></li>
 
 </ol>
 
@@ -44,6 +48,8 @@
     <h3><a href="#i"><img class="it" src="iconos/icons8-linux-48.png" alt="">  INICIO:</a>Comandos :</h3>
 
     <pre>
+        <h4>Copiar comandos despues de $</h4>
+
         <h4>BASH</h4>
         <strong>Ctrl-Alt-F1 a Crtl-Alt-F6 : </strong>Cambiar de consola.
         <strong>ls : </strong>lista contenido del directorio.
@@ -113,6 +119,8 @@
             <strong>fdick /dev/sdx : </strong>Seleccionar disco.
 
             <h4>Comandos fdisk</h4>
+            <strong> g : </strong>Crea tabla de particiones GPT. 
+
             <strong> m : </strong>Despliega las opciones del menú.
             <strong> n : </strong>Nueva partición.
             <strong> d : </strong>Borra una partición.
@@ -121,12 +129,7 @@
             <strong> : </strong>.
             <strong> I : </strong>Lista los tipos de partición actuales en el sistema.
             <strong> q : </strong>Sale de fdisk sin guardar las modificaciones.
-            <strong> : </strong>.
-            <strong> : </strong>.
-            <strong> : </strong>.
-
-
-            <h4>Configuracion</h4>
+            
 
             <h4>Crear Nueva partición</h4>
             <strong> n: </strong>Nueva partición.
@@ -147,9 +150,13 @@
             después del primer sector o ingresar un tamaño específico como + 2G o + 256M
             para una partición de 2 gigabytes o 256 megabytes, respectivamente.
 
+            <h4>Seleccionar tamaño de partición</h4>
+
+            t: tipo de particion.
 
 
 
+        
 
 
 
@@ -177,6 +184,65 @@
         </pre>
 
     </div>
+    <h3><a href="#i"><img class="it" src="iconos/icons8-linux-48.png" alt="">  INICIO:</a>Post Instalacion:</h3>
+
+    <pre>
+        <h4>Configuracion Inicial</h4>
+        <h5>crear carpetas de ususarios:</h5>
+        Creamos carpetas de usuario en el urs seleccionado.
+             <h6>$ sudo pacman -S xdg-user-dirs</h6>
+
+        <h5>Lo ejecutamos:</h5>
+             <h6>$ xdg-user-dirs-update</h6>
+
+
+        <h5>Instalar git:</h5>
+
+        <h6>$ sudo pacman -S git</h6>
+        <h4>Instalar AUR YAY:</h4>
+            
+
+        <h5>Instalar base base-devel:</h5>
+            actualizamos base y base-devel en el kernel
+            <h6>$ sudo pacman -S base base-devel --noconfirm</h6>
+
+        <h5>Descargar AUR YAY:</h5>
+            Descargamos el git de YAY
+            <h6>$ git clone https://aur.archlinux.org/yay.git</h6>
+            Cambiamos al directorio si es el directorio actual.
+            <h6>$ cd yay</h6>
+        
+            <h5>Compilar el PKGBUILD:</h5>
+        <h6>$ makepkg -si</h6>
+
+        
+
+
+
+
+
+
+            
+
+
+
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+    </pre>
 
     <div class="tema" id="6">
 
