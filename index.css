@@ -30,22 +30,22 @@ margin-top: 1px;
     text-align: center;
     margin-top: -11rem;
     background-image:linear-gradient(90deg , rgba(223, 23, 12, 0.733));
-    //border-style:outset;
+    border-style:outset;
     border-radius: 150px;
     background-size: 100%;
-    //background-image: url(banner3.jpg)
+    background-image: url(banner3.jpg)
 
 
     }
 
     .contenedor:hover{
         text-align: center;
-        //margin-top: 5px;
+        margin-top: 5px;
         background-image:linear-gradient(90deg , rgba(223, 23, 12, 0.733));
-        //border-style:outset;
+        border-style:outset;
         border-radius: 150px;
         background-size: 100%;
-        //background-image: url(banner3.jpg)
+        background-image: url(banner3.jpg)
     
     
         }    
@@ -202,7 +202,15 @@ border-width: 10px;
     transition: 0.5s;
     filter: blur(0.2px);
 }
-
+.i13:hover{
+    padding:7px;
+    /*background-color: rgba(35, 136, 204, 0.63);*/
+    background-image:linear-gradient(90deg, rgba(220, 223, 23, 0.925),rgba(13, 156, 167, 0.274),rgba(199, 193, 193, 0));
+    border-width: 5px;
+    border-radius: 15px;
+    transition: 0.5s;
+    filter: blur(0.2px);
+}
 
 
 

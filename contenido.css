@@ -197,6 +197,19 @@
 
 }
 
+.bannercursofundamentosdelaprogramación{
+    padding: 200px;
+    display: flex;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url(fondo_banners/bannerfprogramacion.webp);
+    background-repeat: no-repeat;
+
+
+}
+
+
+
 
 
 
@@ -299,7 +312,7 @@ a:hover{
 
 .contenedor:hover{
 border-radius: 10px;
-//background-image:linear-gradient(90deg, rgba(15, 16, 17, 0.767),rgba(37, 73, 83, 0.705),rgba(36, 178, 221, 0.322));   
+background-image:linear-gradient(90deg, rgba(15, 16, 17, 0.767),rgba(37, 73, 83, 0.705),rgba(36, 178, 221, 0.322));   
 transition: 1.2s;
 filter: blur(0.2px);
     
@@ -484,10 +497,17 @@ background-image: url(wallpaperp.jpg)
 }
 .introduccionalainformatica:hover{
 
+
 }
 
+.cursofundamentosdelaprogramación{
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    list-style-position: outside;
+    list-style:url(iconos_listas/office.png) outside none;
 
-
+}
 
 
 
@@ -524,10 +544,10 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 /*TITULOS H3 CONTENIDO*/
 
 h3{
-    //display:flexbox;
-    //background-image: url(iconos/github.png);
-    //background-repeat: no-repeat;
-    //background-position:top;
+    display:flexbox;
+    background-image: url(iconos/github.png);
+    background-repeat: no-repeat;
+    background-position:top;
     /*background-size:2%;*/
     font-size: 60px;
     margin: 0.5%;
