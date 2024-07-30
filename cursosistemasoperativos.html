@@ -545,9 +545,38 @@
         <b>addgroup + nombre : </b>ejecutar como super usuario para crear grupos.
         <b>adduser + nombre : </b>ejecutar como super usuario para crear usuarios.
 
-        <b>GUD :</b> Identificador de grupos.
+        <b>Asignacion de usuarios a grupos</b>
 
-            
+
+        <b>GUD :</b> Identificador de grupos.
+        <b>UID :</b> Identificador de usuarios.
+
+        <b>id + nombre de usuario</b> consultar GID de usuaio.
+
+        <b>Ejemplo :</b>
+
+        root@warnerxd-VirtualBox:/home/warnerxd/Documents# id edward
+        uid=1001(edward) gid=1005(edward) groups=1005(edward)
+        root@warnerxd-VirtualBox:/home/warnerxd/Documents# 
+
+
+
+        <b>Modificacion de Usuarios:</b>  Agregar un usuario a un grupo.
+
+        <b>usermod -g + nombre de grupo + usuario</b>
+
+        <b>cat /etc/passwd :</b> consultar usuarios creados
+
+        <b>cat /etc/group :</b> consultar grupos creados
+
+
+        <b>Eliminar Usuarios:</b>
+
+        <b>deluser + nombre de usuario :</b> Se elimina el usuario, pero se conserva la información.   
+
+        <b>deluser --remove-home + nombre de usuario :</b> Se eliminan usuario, mas los archivos de carpeta home.
+
+        <b>delgroup + nombre de grupo :</b>            
 
         
         
