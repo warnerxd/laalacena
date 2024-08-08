@@ -1,7 +1,7 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    padding: 0px;
+    margin: 10px;
+    /*box-sizing:;*/
 }
 
 /*BANNERS*/
@@ -503,7 +503,7 @@ background-image: url(wallpaperp.jpg)
 .cursofundamentosdelaprogramación{
     display: flex;
     justify-content: center;
-    padding: 0px;
+    padding: 10px;
     list-style-position: outside;
     list-style:url(iconos_listas/office.png) outside none;
 
@@ -609,6 +609,22 @@ color: blanchedalmond;
 
 
 }
+
+.ol { 
+
+    list-style: circle;
+
+    margin-right: 20px;
+    margin-bottom: 10px
+}
+
+.li{
+    margin-left: 5px
+
+
+}
+
+
 
 
 
