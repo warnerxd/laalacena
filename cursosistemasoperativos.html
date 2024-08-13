@@ -24,8 +24,8 @@
     <li class="bt n1"><a href="#1">MODULO1</a></li>
     <li class="bt n2"><a href="#2">SISTEMAS DE ARCHIVOS/DISTROS</a></li>
     <li class="bt n3"><a href="#3">MODULO 2</a></li>
-    <li class="bt n4"><a href="#4">ADMINISTRACION DE USUARIOS Y GRUPOS</a></li>
-    <li class="bt n5"><a href="#5">PERMISOS DE ARCHIVOS</a></li>
+    <li class="bt n4"><a href="#4">TERMINAL</a></li>
+    <li class="bt n5"><a href="#5"></a></li>
     <li class="bt n6"><a href="#6"></a></li>
     <li class="bt n7"><a href="#7"></a></li>
     <li class="bt n8"><a href="#8"></a></li>
@@ -473,9 +473,9 @@
 
         <pre>
 
-        <h3><a href="#i"><img class="it" src="iconos/github.png" alt="">  INICIO:</a></h3>  
+        <h3>BUSQUEDA DE ARCHIVOS Y CARPETAS</h3>  
 
-        <b>BUSQUEDA DE ARCHIVOS Y CARPETAS</b>
+        
 
 
         <b>find sintaxis</b>
@@ -526,69 +526,56 @@
 
 
 
-
-    </pre>
-
-    </div>
-
-    <div class="tema" id="4">
-
-        <pre><h3><a href="#i"><img class="it" src="iconos/github.png" alt="">  INICIO:ADMINISTRACION DE USUARIOS Y GRUPOS</a></h3>
+            <h3>ADMINISTRACION DE USUARIOS Y GRUPOS</a></h3>
         
-        <b>ls -l</b>
-
-        <b>su - + usuario :</b>Cambiar entre usuarios.
-        
-        listar con detalles de permisos.
-
-        <b>Creacion de grupos y usuarios</b>
-
-
-        <b>addgroup + nombre : </b>ejecutar como super usuario para crear grupos.
-        <b>adduser + nombre : </b>ejecutar como super usuario para crear usuarios.
-
-        <b>Asignacion de usuarios a grupos</b>
-
-
-        <b>GUD :</b> Identificador de grupos.
-        <b>UID :</b> Identificador de usuarios.
-
-        <b>id + nombre de usuario</b> consultar GID de usuaio.
-
-        <b>Ejemplo :</b>
-
-        root@warnerxd-VirtualBox:/home/warnerxd/Documents# id edward
-        uid=1001(edward) gid=1005(edward) groups=1005(edward)
-        root@warnerxd-VirtualBox:/home/warnerxd/Documents# 
-
-
-
-        <b>Modificacion de Usuarios:</b>  Agregar un usuario a un grupo.
-
-        <b>usermod -g + nombre de grupo + usuario</b>
-
-        <b>cat /etc/passwd :</b> consultar usuarios creados
-
-        <b>cat /etc/group :</b> consultar grupos creados
-
-
-        <b>Eliminar Usuarios:</b>
-
-        <b>deluser + nombre de usuario :</b> Se elimina el usuario, pero se conserva la información.   
-
-        <b>deluser --remove-home + nombre de usuario :</b> Se eliminan usuario, mas los archivos de carpeta home.
-
-        <b>delgroup + nombre de grupo :</b> Elimina grupo seleccionado.           
-
+            <b>ls -l</b>
     
-        
-        
-        </pre>
-        
-    </div>
+            <b>su - + usuario :</b>Cambiar entre usuarios.
+            
+            listar con detalles de permisos.
+    
+            <b>Creacion de grupos y usuarios</b>
+    
+    
+            <b>addgroup + nombre : </b>ejecutar como super usuario para crear grupos.
+            <b>adduser + nombre : </b>ejecutar como super usuario para crear usuarios.
+    
+            <b>Asignacion de usuarios a grupos</b>
+    
+    
+            <b>GUD :</b> Identificador de grupos.
+            <b>UID :</b> Identificador de usuarios.
+    
+            <b>id + nombre de usuario</b> consultar GID de usuaio.
+    
+            <b>Ejemplo :</b>
+    
+            root@warnerxd-VirtualBox:/home/warnerxd/Documents# id edward
+            uid=1001(edward) gid=1005(edward) groups=1005(edward)
+            root@warnerxd-VirtualBox:/home/warnerxd/Documents# 
+    
+    
+    
+            <b>Modificacion de Usuarios:</b>  Agregar un usuario a un grupo.
+    
+            <b>usermod -g + nombre de grupo + usuario</b>
+    
+            <b>cat /etc/passwd :</b> consultar usuarios creados
+    
+            <b>cat /etc/group :</b> consultar grupos creados
+    
+    
+            <b>Eliminar Usuarios:</b>
+    
+            <b>deluser + nombre de usuario :</b> Se elimina el usuario, pero se conserva la información.   
+    
+            <b>deluser --remove-home + nombre de usuario :</b> Se eliminan usuario, mas los archivos de carpeta home.
+    
+            <b>delgroup + nombre de grupo :</b> Elimina grupo seleccionado.    
 
 
-    <pre><h3><a href="#i"><img class="it" src="iconos/github.png" alt="">  INICIO:PERMISOS DE ARCHIVOS</a></h3>
+
+            <h3>PERMISOS DE ARCHIVOS</h3>
 
 
         <img src="imagenes_git/permisos 1.png" alt="">
@@ -611,8 +598,20 @@
         g - Grupo (usuarios del mismo grupo que el propietario)
         o - Otros (todos los demás)
         a - Todos (u, g, y o)
+            
 
+
+        <h3>COMPRIMIR Y DESCOMPRIMIR ARCHIVOS</h3>
+            
+    
+
+    </pre>
+
+    </div>
+
+    <div class="tema" id="4">
         
+    </div>
 
     <div class="tema" id="5">
 
