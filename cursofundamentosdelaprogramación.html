@@ -483,8 +483,8 @@
 
         for i in range(len(lista)):
             if lista[i]==elemento:
-                return i 
-                return -1 #Si el elemento no esta en la lista.
+                return i #retorno del indice
+            return -1 #Si el elemento no esta en la lista.
 
 
         #Ejemplo con lista de numeros 
@@ -496,10 +496,40 @@
 
 
         if resultado =! -1:
-            print(f"No esta el elemento{elemento_buscado} se encuentra en el indice {resultado}")
+            print(f"El elemento buscado {elemento_buscado} se encuentra en el indice {resultado}")
         else:
-            print(f"No esta el elemento{elemento_buscado} no se encuentra en la lista")
+            print(f"El elemento{elemento_buscado} no se encuentra en la lista")
 
+
+        <h3>BUSQUEDA BINARIA</h3>
+
+        Algoritmo de busqueda eficiente, aplicado a listas ordenadas divide repetidamente la lista a la mitad
+        reduciendo el numero de elementos a revisar.
+
+        def busqueda_binaria(lista,elemento):
+            low=0
+            high=len(lista) -1
+
+            while low <= high:
+                mid=(low-high)//2
+                if lista[mid]==elemento:
+                    return mid
+                elif lista[mid] < elemento:
+
+                else: 
+                    high ==mid -1
+            return -1
+
+
+        lista_ordenada=[1,2,3,4,5,6,7,8,9,10]
+        elemento_buscado=7
+
+        resultado=buscaqueda(lista_ordenada,elemento_buscado)
+
+        if resultado = -1
+            print(f"El elemento {elemento_buscado} se encuentra en el indice{resultado}")
+        else:
+            print(f"El elemento {elemento_buscado} no esta en la lista")
 
 
         
