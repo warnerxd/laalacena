@@ -28,7 +28,7 @@
     <li class="bt n2"><a href="#2">MODULO 2</a></li>
     <li class="bt n3"><a href="#3">MODULO 3</a></li>
     <li class="bt n4"><a href="#4">ALGORITMOS Y COMPLEJIDAD</a></li>
-    <li class="bt n5"><a href="#5"></a></li>
+    <li class="bt n5"><a href="#5">ALGORITMOS DE ORDENAMIENTO</a></li>
     <li class="bt n6"><a href="#6"></a></li>
     <li class="bt n7"><a href="#7"></a></li>
     <li class="bt n8"><a href="#8"></a></li>
@@ -531,24 +531,131 @@
         else:
             print(f"El elemento {elemento_buscado} no esta en la lista")
 
+    <h3>BUSQUEDA POR INTERPOLACION</h3>
 
+        Es un algoritmo de busqueda de elementos en listas ordenadas 
+        de manera eficiente; utilizando la estimacion basada en la 
+        distribucion uniforme de los valores en la lista.
+
+        def busqueda_interpolacion(lista,elemento):
+            low=0
+            high=len(lista) - 1
+
+            while low <= high and lista[low] <= elemento <=lista[high]
+            # formula de interpolacion para busqueda binaria
+
+                pos= low + (elemento-lista[low]* (hig-low))//(lista[higt]-lista[low])
+
+                if lista[pos]==elemento:
+                    return pos
+                elif lista[pos]<elemento:
+                    low = pos + 1
+                else: 
+                    high = pos -1
+            return -1
+
+        numeros_ordenados=[2,4,6,8,10,12,14,16,18,20]
+        elemento_buscado=10
+        resultado=busqueda_interpolacion(numeros_ordenados,elemento_buscado)
+
+        if resultado != -1:
+            print(f"El elemento {elemento_buscado} se encuentra en el indice{resultado}")
+        else:
+            print(f"El elemento {elemento_buscado} no esta en la lista")
+
+
+
+    <h3>BUSQUEDA ARBOLES BINARIOS</h3>
+
+    1.Comenzar en la raiz del ARBOLES
+    2.Comparar el elemento con el valor en el nodo actual.
+    3.si el valor es menor ,buscar en el subarbol derecho.
+
+        <b>EJEMPLO :</b>
+
+        class nodoABB
+
+        def_init_(self,valor):
+
+            self.valor=valor
+            self.izquierda=none
+            self.derecha=none
+
+        def busqueda_abb(nodo,elemento)
+            if nodo is none or novo.valor==elemento:
+            return nodo
+            
+            # Si el valor es menor que el nodo actual, busca en el subárbol izquierdo
+            if valor < nodo.valor:
+                return buscar(nodo.izquierda, valor)
+            
+            # Si el valor es mayor, busca en el subárbol derecho
+            return buscar(nodo.derecha, valor)
         
+        <b># Ejemplo de uso:</b>
 
+        # Construcción del árbol binario de búsqueda
+        raiz = Nodo(15)
+        raiz.izquierda = Nodo(10)
+        raiz.derecha = Nodo(20)
+        raiz.izquierda.izquierda = Nodo(8)
+        raiz.izquierda.derecha = Nodo(12)
+        raiz.derecha.izquierda = Nodo(17)
+        raiz.derecha.derecha = Nodo(25)
         
-
+        # Buscando el valor 12
+        resultado = buscar(raiz, 12)
+        if resultado:
+            print("Valor encontrado:", resultado.valor)
+        else:
+            print("Valor no encontrado")
 
 
 
     </pre>
 
-
-
-
-    <div class="tema" id="4">
-
     </div>
 
     <div class="tema" id="5">
+
+        <h3><a href="#i"><img class="it" src="*/iconos/github.png" alt="">ALGORITMOS DE ORDENAMIENTO:</a></h3>
+
+        <pre>
+            
+            <h3>ORDENAMIENTO POR BURBUJA</h3>
+
+            Recorre la lista de valores a ordenar , compara dos valores. si los dos elementos 
+            estan bien ordenados continua de lo contrario mueve el mas grande al final.
+            se repite el proceso hasta ordenar todo el arreglo.
+
+            def busq(lista):
+                    n=len(lista)
+
+                    for i in range(n):
+                        for j in range(0,n-i-1):
+                            
+                            if lista[j] > lista[j+1]:
+                                lista[j] ,lista[j+1]=lista[j+1],lista[j]
+
+                    return lista
+
+
+            lista=[1,4,6,8,0,4,67,8,13,4,6,78,33,43,33,2221,11,1,1,1,1,1,2,3,3,4,5,6,]
+            lista_ordenada=busq(lista)
+            print(lista_ordenada)
+
+            <h3>ORDENAMIENTO POR INSERCION</h3>
+
+            Construye una lista ordenada de un elemento a la vez, en donde
+            desplaza elementos mas grandes hacia la derecha mientras se muestra su 
+            lugar correcto.
+
+
+
+
+
+        </pre>
+
 
     </div>
 
