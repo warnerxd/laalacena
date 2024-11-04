@@ -606,37 +606,60 @@
 
         <b>Instalación de unrar</b>
 
-            Para extraer archivos RAR, necesitarás instalar la herramienta unrar o rar.
+        Para extraer archivos RAR, necesitarás instalar la herramienta unrar o rar.
 
 
-            sudo apt install unrar
+        sudo apt install unrar
 
-            <b>Instalación de rar</b>
+        <b>Instalación de rar</b>
 
-            rar permite crear archivos RAR además de extraerlos. Para instalarlo:
+        rar permite crear archivos RAR además de extraerlos. Para instalarlo:
             
-            sudo apt install rar
+        sudo apt install rar
 
 
+        <b>Uso de unrar para extraer archivos RAR</b>
+
+        unrar x archivo.rar
 
 
-            <b>Uso de unrar para extraer archivos RAR</b>
+        <b>Uso de rar para crear y gestionar archivos RAR</b>
 
-            unrar x archivo.rar
-
-
-            <b>Uso de rar para crear y gestionar archivos RAR</b>
-
-            rar a archivo.rar /archivos 
+        rar a archivo.rar /archivos 
 
 
-            <b>Comprimir archivo cifrado</b> 
+        <b>Comprimir archivo cifrado</b> 
             
             
-            rar a archivo.rar /ruta/a/los/archivos/ -p
+        rar a archivo.rar /ruta/a/los/archivos/ -p
 
 
+            
+        <h3>APAGADO Y REINICIO DEL SISTEMA</h3>
 
+        <b>sudo shutdown -h:</b>Programar apagado
+
+        <b>sudo shutdown +10:</b>Programar apagado en un tiempo especificado en minutos. 
+
+        <b>shutdown hora</b>Programar apagado en formato 24 horas
+
+        <b>sudo shutdown -c:</b> Cancelar apagado   
+
+        <b>sudo shutdown now:</b>Apagar sin confirmacion 
+
+        <b>en inicio ALT + TAB:</b>Ver procesos de inicio 
+
+        <b>reboot</b>Reinicio
+
+        <b>shutdown -r</b>Reinicio
+
+        <b>shutdown -r +10</b>Programar reinicio.
+
+        <b>shutdown -r +10 "El equipo se reiniciara en 10 minutos"</b>Mensaje reinicio
+
+        <b>cat /sys/power/state</b>:Mensaje con opciones para suspender o hibernar.
+
+        <b>pm-suspend</b>
 
             
             
