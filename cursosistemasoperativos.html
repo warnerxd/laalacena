@@ -661,8 +661,191 @@
 
         <b>pm-suspend</b>
 
+
+        <h3>CONFIGURACION RED UBUNTU SERVER</h3>
+
+        <b>ls /sys/class/net:</b>ver interfaz de red
+
+        <b>cp /etc/netplan/00-installer-confg.yam1 /root/:</b>Copiar archivos de configuracion.
+
+
+        <b>1. Editar el archivo de configuración de Netplan</b>
+
+        En Ubuntu Server, los archivos de configuración de red de Netplan suelen estar en /etc/netplan/. 
+        Puede haber un archivo de configuración predeterminado con un nombre como 00-installer-config.yaml
+        o 01-netcfg.yaml.
+        
+        Para editar este archivo, usa un editor de texto (como nano):
+
+        <b>sudo nano /etc/netplan/00-installer-config.yaml</b>
             
-            
+        <b>2. Configurar la red</b>
+
+        Dentro del archivo YAML, puedes configurar la red, ya sea con una IP estática o mediante DHCP
+        (IP asignada automáticamente). Aquí hay ejemplos para cada configuración.
+        Configuración de IP dinámica (DHCP)
+
+        Si quieres que tu servidor obtenga la dirección IP automáticamente a través de DHCP, 
+        utiliza la siguiente configuración básica:
+
+        network:
+            version: 2
+            ethernets:
+                enp3s0:  # Cambia "enp3s0" por el nombre de tu interfaz de red
+                    dhcp4: true
+        
+                    
+        <b>Configuración de IP estática</b>
+
+        Si necesitas una IP fija, puedes configurar la red de esta forma:      
+        
+        network:
+         version: 2
+         ethernets:
+            enp3s0:  # Cambia "enp3s0" por el nombre de tu interfaz de red
+             dhcp4: false
+             addresses:
+                - 192.168.1.100/24  # Dirección IP y máscara de subred
+             gateway4: 192.168.1.1  # Dirección IP de la puerta de enlace
+             nameservers:
+              addresses:
+                - 8.8.8.8  # Servidor DNS (puedes añadir más)
+                - 8.8.4.4
+
+        3. Aplicar la configuración de Netplan
+    
+         <b>sudo netplan apply</b>
+
+        <h3>CONFIGURACION DNS</h3>
+
+        1. Editar el archivo de configuración de Netplan:
+
+         Localiza el archivo de configuración en /etc/netplan/. Generalmente, hay un archivo con la extensión 
+         .yaml (por ejemplo, 01-netcfg.yaml).
+
+         Abre el archivo para editarlo:
+
+         <b>sudo nano /etc/netplan/01-netcfg.yaml</b>
+
+        2.Añadir los servidores DNS:
+
+        Busca la configuración de la red y añade o modifica las entradas nameservers para especificar los servidores DNS.
+        Asegúrate de que el archivo tenga un formato correcto (usa espacios en lugar de tabulaciones en YAML).
+        Aquí tienes un ejemplo de configuración:
+
+            network:
+                version: 2
+                ethernets:
+                    enp3s0:
+                     dhcp4: no
+                     addresses:
+                        - 192.168.1.10/24
+                     gateway4: 192.168.1.1
+                     nameservers:
+                        addresses:
+                         - 8.8.8.8
+                         - 8.8.4.4
+
+        Cambia enp3s0 por el nombre de tu interfaz de red. Puedes obtener el nombre de la interfaz con el comando ip link.
+
+        3.Aplicar los cambios:
+                         
+        Guarda y cierra el archivo. Luego, aplica los cambios de configuración con:
+
+            <b>sudo netplan apply</b>
+
+        <h3>sudo netplan apply</h3>
+
+
+        1. Instalación de BIND9
+
+            Primero, instala BIND9 si aún no lo has hecho:
+
+            <b>sudo apt update</b>
+            <b>sudo apt install bind9 bind9utils bind9-doc</b>
+
+        2. Configuración del archivo principal: named.conf.options
+
+        Edita el archivo named.conf.options que se encuentra en /etc/bind/:
+
+        <b>sudo nano /etc/bind/named.conf.options</b>
+
+        sudo nano /etc/bind/named.conf.options
+        
+        3. Configuración de zonas en named.conf.local
+
+        El archivo named.conf.local define las zonas que el servidor va a manejar. Abre el archivo para agregar tus zonas:
+
+        <b>sudo nano /etc/bind/named.conf.local</b>
+
+        Ejemplo de configuración para una zona directa (example.com) y una zona inversa (para una red 192.168.0.x):
+
+
+        zone "example.com" {
+            type master;
+            file "/etc/bind/db.example.com";
+        };
+        
+        zone "0.168.192.in-addr.arpa" {
+            type master;
+            file "/etc/bind/db.192";
+        };
+
+        
+        <b>4. Crear los archivos de zona</b>
+
+        Zona directa
+
+        Crea el archivo para la zona directa en <b>/etc/bind/db.example.com:</b>
+
+        <b>sudo cp /etc/bind/db.local /etc/bind/db.example.com</b>
+
+        <b>sudo nano /etc/bind/db.example.com</b>   
+        
+
+        Ejemplo de configuración:
+
+        $TTL 86400
+        @   IN  SOA     ns1.example.com. admin.example.com. (
+                        2          ; Serial
+                        604800     ; Refresh
+                        86400      ; Retry
+                        2419200    ; Expire
+                        604800 )   ; Negative Cache TTL
+
+        ; Servidores de nombres
+        @       IN  NS      ns1.example.com.
+        ns1     IN  A       192.168.0.1
+
+        ; Registros A
+        @       IN  A       192.168.0.10
+        www     IN  A       192.168.0.10
+
+        5. Revisar la configuración y reiniciar BIND9
+
+        Verifica la configuración de BIND9 con:
+
+        <b>sudo named-checkconf</b>
+
+        Verifica los archivos de zona:
+
+        sudo named-checkzone example.com /etc/bind/db.example.com
+        sudo named-checkzone 0.168.192.in-addr.arpa /etc/bind/db.192
+
+        Si no hay errores, reinicia el servicio de BIND:
+
+        sudo systemctl restart bind9
+
+        6. Pruebas
+
+        Para probar, usa nslookup o dig desde otra máquina:
+
+        <b>nslookup www.example.com 192.168.0.1</b>
+        
+
+
+
+
     
 
     </pre>
