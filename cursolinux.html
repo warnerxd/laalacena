@@ -48,31 +48,82 @@
     <h3><a href="#i"><img class="it" src="iconos/icons8-linux-48.png" alt="">  INICIO:</a>Comandos :</h3>
 
     <pre>
-        <h4>Copiar comandos despues de $</h4>
 
-        <h4>BASH</h4>
-        <strong>Ctrl-Alt-F1 a Crtl-Alt-F6 : </strong>Cambiar de consola.
-        <strong>ls : </strong>lista contenido del directorio.
-        <strong>ls -lss : </strong>Ordena los resultados por tamaño.
-        <strong>ls -t: </strong>Ordena por hora de modificación..
-        <strong>ls -a : </strong>lista contenido del directorio incluyendo archivos ocultos.
-        <strong>pdw : </strong>lista directorio actual.
-        <strong>cd : </strong>Moverse a un directorio.
-        <strong>cd .. : </strong>Devolverse a un directorio.
-        <strong>mkdir: </strong>Crear una carpeta.
-        <strong>file : </strong>Muestra el contenido del archivo .
+        <h3>Comandos de Navegacion:</h3>
+<table id="tb1">
+  <tr>
+    <th><h7>COMANDO</h7></th>
+    <br>
+    <th><h7>FUNCION</h7></th>
+    <br>
+    <th><h7>AMPLIACION</h7></th>
+  </tr>
+  <tr>
+    <td><h6>ls</h6></td>
+    <td>es una herramienta esencial de la línea de comandos que se utiliza para listar archivos
+       y directorios en un directorio dado. Es uno de los comandos más utilizados en Linux y ofrece
+        una gran cantidad de opciones para personalizar la forma en que se muestra la información.</td>
+  </tr>
+  <tr>
+    <td><h6>-l</h6></td>
+    <td>Muestra la lista de archivos en formato largo, incluyendo información detallada como
+       permisos, propietario, tamaño y fecha de modificación..</td>
+  </tr>
+  <tr>
+    <td><h6>-a</h6></td>
+    <td>Muestra todos los archivos, incluyendo los archivos ocultos (aquellos que comienzan con un punto ".").</td>
+    <tr>
+    <td><h6>-h</h6></td>
+    <td>Muestra los tamaños de archivo en un formato legible por humanos (por ejemplo, KB, MB, GB).</td>
+    <tr>
+    <td><h6>-t</h6></td>
+    <td>Ordena los archivos por fecha de modificación.</td>
+    <tr>
+    <td><h6>-r</h6></td>
+    <td> Invierte el orden de la lista.</td>
+    <tr>
+    <td><h6></h6></td>
+    <td></td>
+    <tr>
+    <td><h6></h6></td>
+    <td></td>
+  </tr>
+</table>
 
-
-        <h4></h4>
-
-
-        
-        
-        
-
-
+<h3>Comandos de Información:</h3>
+<table id="tb1">
+  <tr>
+    <th><h7>COMANDO</h7></th>
+    <br>
+    <th><h7>FUNCION</h7></th>
+    <br>
+    <th><h7>AMPLIACION</h7></th>
+    
+  </tr>
+  <tr>
+    <td><h6></h6></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><h6></h6></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><h6></h6></td>
+    <td></td>
+    <tr>
+    <td><h6></h6></td>
+    <td></td>
+    <tr>
+    <td><h6></h6></td>
+    <td></td>
+  </tr>
+</table>
+       
 
     </pre>
+
+    
 
     </div>
     
@@ -91,158 +142,25 @@
     <div class="tema" id="5">
         <h3><a href="#i"><img class="it" src="iconos/icons8-linux-48.png" alt="">  INICIO:</a>Instalació Arch Linux:</h3>
 
-        <pre>
-            <h4>Link descargar :   <a href="https://archlinux.org/" target="_blank"><img src="imagenes_Linux/icons8-arch-linux-composed-of-nonfree-and-open-source-software-24.png"></a></h4>
-            <h4>WIKI Arch Linux :   <a href="https://wiki.archlinux.org/" target="_blank"><img src="imagenes_Linux/icons8-arch-linux-composed-of-nonfree-and-open-source-software-24.png"></a></h4>
-            <h4>Configuracion teclado:</h4>
-            <strong>loadkeys opcion : </strong>Idioma teclado.
-            <h4>Verificar el modo de arranque:</h4>
-            <strong> # cat /sys/firmware/efi/fw_platform_size : </strong>Verificar el modo de arranque.
+      
+      <pre>
+        <h4>Crear un disco de arranque (bootable)</h4>
 
-            Si el comando devuelve 64, entonces el sistema se inicia en modo <strong>UEFI</strong>    
-            tiene una UEFI IA32 de 32 bits; Si bien esto es compatible, limitará la opción del cargador de arranque a systemd-boot.
-            Si el archivo no existe, es posible que el sistema se inicie en modo <strong>BIOS</strong>  
-            
-            <h4>Conectar a internet:</h4>
-            <strong> # ip link : </strong>Asegúrese de que su interfaz de red esté listada y habilitada, con ip-link.
-            <strong> # ping ip : </strong>La conexión se puede verificar con ping .
-
-            <h4>Actualizar el reloj del sistema:</h4>
-            <strong> # timedatectl : </strong>Utilice timedatectl para garantizar que el reloj del sistema sea preciso:.
-
-            <h4>Particionar los discos:</h4>
-            <strong># fdisk -l : </strong>Cuando el sistema en vivo los reconoce, los discos se asignan a un dispositivo de bloque
-            como /dev/sda, /dev/nvme0n1o /dev/mmcblk0. Para identificar estos dispositivos, utilice <strong>lsblk</strong> o <strong>fdisk </strong>
-
-            <h4>fdisk</h4>
-
-            <strong>fdick /dev/sdx : </strong>Seleccionar disco.
-
-            <h4>Comandos fdisk</h4>
-            <strong> g : </strong>Crea tabla de particiones GPT. 
-
-            <strong> m : </strong>Despliega las opciones del menú.
-            <strong> n : </strong>Nueva partición.
-            <strong> d : </strong>Borra una partición.
-            <strong> p : </strong>Despliega las particiones actuales.
-            <strong> : </strong>.
-            <strong> : </strong>.
-            <strong> I : </strong>Lista los tipos de partición actuales en el sistema.
-            <strong> q : </strong>Sale de fdisk sin guardar las modificaciones.
-            
-
-            <h4>Crear Nueva partición</h4>
-            <strong> n: </strong>Nueva partición.
-
-            <h4>Seleccionar tipo partición</h4>
-            <strong> p: </strong>Nueva partición Primaria.
-            <strong> e: </strong>Nueva partición Extendida.
-
-            <h4>Seleccionar numero de partición</h4>
-            A continuación, se pedirá que introduzca el primer número de cilindro
-            o sector de la partición que se va a crear. Puedes pulsar Intro para
-            aceptar los valores predeterminados.
-
-            <h4>Seleccionar tamaño de partición</h4>
-
-            Se pedirá que ingreses el último cilindro o número de sector de la partición
-            que se va a crear. Puedes presionar Enter para usar todo el espacio disponible 
-            después del primer sector o ingresar un tamaño específico como + 2G o + 256M
-            para una partición de 2 gigabytes o 256 megabytes, respectivamente.
-
-            <h4>Seleccionar tamaño de partición</h4>
-
-            t: tipo de particion.
+        <h6>dd if=/ruta/a/mi/imagen.iso of=/dev/sdX bs=4M status=progress && sync</h6>
 
 
+
+
+      </pre>
+
+
+
+    
 
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-            
-
-            
-            
-            
-
-
-
-        </pre>
-
     </div>
     <h3><a href="#i"><img class="it" src="iconos/icons8-linux-48.png" alt="">  INICIO:</a>Post Instalacion:</h3>
 
-    <pre>
-        <h4>Configuracion Inicial</h4>
-        <h5>crear carpetas de ususarios:</h5>
-        Creamos carpetas de usuario en el urs seleccionado.
-             <h6>$ sudo pacman -S xdg-user-dirs</h6>
-
-        <h5>Lo ejecutamos:</h5>
-             <h6>$ xdg-user-dirs-update</h6>
-
-
-        <h5>Instalar git:</h5>
-
-        <h6>$ sudo pacman -S git</h6>
-        <h4>Instalar AUR YAY:</h4>
-            
-
-        <h5>Instalar base base-devel:</h5>
-            actualizamos base y base-devel en el kernel
-            <h6>$ sudo pacman -S base base-devel --noconfirm</h6>
-
-        <h5>Descargar AUR YAY:</h5>
-            Descargamos el git de YAY
-            <h6>$ git clone https://aur.archlinux.org/yay.git</h6>
-            Cambiamos al directorio si es el directorio actual.
-            <h6>$ cd yay</h6>
-        
-            <h5>Compilar el PKGBUILD:</h5>
-        <h6>$ makepkg -si</h6>
-
-        
-
-
-
-
-
-
-            
-
-
-
-
-        
-        
-        
-
-
-
-
-
-
-
-
-
-
-
-
-    </pre>
 
     <div class="tema" id="6">
 

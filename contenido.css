@@ -513,23 +513,8 @@ background-image: url(wallpaperp.jpg)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 a{
-    text-align:inherit;
+text-align:left;
 font-size:50px;
 text-decoration: none;
 color: blanchedalmond;
@@ -569,22 +554,31 @@ h4{
     font-size: 50px;
     margin: 0px px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:rgba(18, 212, 212, 0.668);
-    /*text-shadow: 3px 3px black;*/
+    color:rgba(82, 205, 86, 0.668);
+    text-shadow: 3px 3px black;
 
 
 }
 /*para comandos*/
 h6{
+    
     border:5px dashed rgba(210, 214, 225, 0.621);
+    display:table-cell;
+    padding:1rem;
     background-color: black;
     font-size: 50px;
-    margin-right:60em;
-    margin-left: 3em;
+    margin-right:30em;
+    margin-left: 0em;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:rgba(18, 212, 212, 0.668);
-    /*text-shadow: 3px 3px black;*/
+    color:rgba(34, 237, 95, 0.668);
+    text-shadow: 3px 3px black;
 
+
+}
+
+h7{
+    color: rgb(178, 211, 193);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
@@ -602,8 +596,8 @@ b{
 
 
 pre{
-    font-size: 45px;
-    margin-left: 30px;
+    font-size: 50px;
+    margin-left: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 color: blanchedalmond;
 
@@ -613,19 +607,31 @@ color: blanchedalmond;
 .ol { 
 
     list-style: circle;
-
-    margin-right: 20px;
-    margin-bottom: 10px
+    margin-right: 0px;
+    margin-bottom: 0px
 }
 
 .li{
-    margin-left: 5px
+    margin-left: 0px
 
 
 }
 
 
 
+#tb1{
+    
+    border-collapse: collapse;
 
+    td, th {
+        text-align:justify;
+        border: 1px solid #ddd; /* Ejemplo: borde gris claro de 1px */
+        padding: 15px; /* Añade padding para separar el texto del borde */
+      }
+
+    
+    
+
+}
 
 

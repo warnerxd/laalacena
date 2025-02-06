@@ -25,31 +25,33 @@ margin-top: 1px;
 /*css del div contenedor*/
 
 .contenedor{
+    
     margin-bottom: 25px;
     padding: 4.5%;
     text-align: center;
-    margin-top: -11rem;
-    background-image:linear-gradient(90deg , rgba(223, 23, 12, 0.733));
-    border-style:outset;
+    margin-top: 5px;
+    /*background-image:linear-gradient(90deg , rgba(223, 23, 12, 0.733));*/
+    /*border-style:outset;*/
     border-radius: 150px;
     background-size: 100%;
     background-image: url(banner3.jpg)
 
 
     }
-
+/*
     .contenedor:hover{
+        backdrop-filter: blur(5px);
         text-align: center;
         margin-top: 5px;
         background-image:linear-gradient(90deg , rgba(223, 23, 12, 0.733));
         border-style:outset;
         border-radius: 150px;
         background-size: 100%;
-        background-image: url(banner3.jpg)
+       
     
     
         }    
-
+*/
 /*caracteriticas de botones en comun*/
 .icon{
     filter: blur(0.8px);
@@ -213,17 +215,16 @@ border-width: 10px;
 }
 
 
-
 /*cuerpo pagina*/
+
 body{
     background-size:cover;
     background-repeat: no-repeat;
     background-image: url(wallpaperp.jpg)
     
-    
+  
 
 }
-
 
 
 /*NOTAS*/
@@ -231,9 +232,9 @@ body{
 .tarjeta{
     display:flexbox;
 font-size: 30px;
-margin: 1% auto 15px;
+margin: 0.5% auto 15px;
 width: 120rem;
-height: 70rem;
+height: 90rem;
 border: 2px solid #fafafa10
 
 
@@ -259,7 +260,7 @@ backdrop-filter: blur(4.8px);
 
     #notas{
         margin-top: 12px;
-        margin-left:  -95%;
+        margin-left:  -100%;
         font-family:fantasy;
         text-shadow: 1px 1px 1px cyan;
 
@@ -270,8 +271,9 @@ backdrop-filter: blur(4.8px);
 /*RECURSOS*/
 
     #recursos{
-        margin-top: 12px;
+        margin-top: 0px;
         margin-left: -10%;
+        margin-bottom: -50px;
         font-family:fantasy;
         text-shadow: 1px 1px 1px cyan;
 
@@ -279,9 +281,10 @@ backdrop-filter: blur(4.8px);
 
     .tarjetal{
     display: flex;
-    margin:-23rem -38rem;
+    margin:-25rem -60rem;
+    margin:-23rem -50rem;
     padding: 3px;
-    width: 35rem;
+    width: 40%;
     height: 89rem;
     border: 2px solid #fafafa10
     }
@@ -303,13 +306,6 @@ backdrop-filter: blur(4.8px);
         -webkit-backdrop-filter: blur(0.8px);
             
             }
-
-
-
-
-
-
-
 
 
 /*LINKS*/
