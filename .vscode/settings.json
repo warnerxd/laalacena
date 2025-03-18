@@ -1,0 +1,8 @@
+{
+    "animations.Active": "Indent",
+    "animations.CursorAnimation": true,
+    "animations.Command-Palette": "Fade",
+    "animations.Scrolling": "Slide",
+    "animations.Tabs": "Slide",
+    "animations.Focus-Dimming-Mode": "Full Window"
+}

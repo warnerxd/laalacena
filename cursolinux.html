@@ -144,23 +144,50 @@
 
       
       <pre>
-        <h4>Crear un disco de arranque (bootable)</h4>
+        Crear un disco de arranque (bootable):
 
-        <h6>dd if=/ruta/a/mi/imagen.iso of=/dev/sdX bs=4M status=progress && sync</h6>
-
-
-
+        <h6># dd if=/ruta/a/mi/imagen.iso of=/dev/sdX bs=4M status=progress && sync</h6>
 
       </pre>
 
-
-
-    
-
-        
     </div>
     <h3><a href="#i"><img class="it" src="iconos/icons8-linux-48.png" alt="">  INICIO:</a>Post Instalacion:</h3>
+  
+    <pre>
+        <h7>Cargar teclado es es:</h7> 
+        <h6># loadkeys es</h6>internet
 
+        <h7>verificar tu conexio wifi o ethernet:</h7>
+        
+        metodo IDW:
+
+        <h6># systemctl enable --now iwd</h6>
+        <h6># iwctl --passphrase 'password' station wlan0 connect 'nombre-de-red'</h6>
+
+        Para redes wifi ocultas:
+
+        <h6># nano /etc/wpa_supplicant/wpa_supplicant.conf</h6>
+        Agregamos:
+        <h6>network={   ssid="red"   scan_ssid=1   key_mgmt=WPA-PSK   psk="password" }</h6>
+        levantamos la red:
+        <h6># wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf</h6>
+
+        <h7>Verificacion Modo de arranque :</h7>
+        <h6># ls /sys/firmware/efi/efivars</h6>
+
+        <h7>Creacion Tabla de particiones :</h7>
+
+        En este caso usaremos UEFI-GPT.
+        <h7>Verificar particiones :</h7>
+        <h6># fdisk -l</h6>
+
+
+
+
+
+
+
+    </pre>
 
     <div class="tema" id="6">
 

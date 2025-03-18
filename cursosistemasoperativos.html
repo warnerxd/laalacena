@@ -690,6 +690,7 @@
 
         network:
             version: 2
+            renderer: NetworkManager
             ethernets:
                 enp3s0:  # Cambia "enp3s0" por el nombre de tu interfaz de red
                     dhcp4: true
@@ -702,11 +703,13 @@
         network:
          version: 2
          ethernets:
-            enp3s0:  # Cambia "enp3s0" por el nombre de tu interfaz de red
+           enp3s0:  # Cambia "enp3s0" por el nombre de tu interfaz de red
              dhcp4: false
              addresses:
                 - 192.168.1.100/24  # Dirección IP y máscara de subred
-             gateway4: 192.168.1.1  # Dirección IP de la puerta de enlace
+             routes:
+               - to: default
+                 via: 192.168.0.1 # cambiar por puerta de enlace 
              nameservers:
               addresses:
                 - 8.8.8.8  # Servidor DNS (puedes añadir más)
@@ -718,45 +721,7 @@
 
         <h3>CONFIGURACION DNS</h3>
 
-        1. Editar el archivo de configuración de Netplan:
-
-         Localiza el archivo de configuración en /etc/netplan/. Generalmente, hay un archivo con la extensión 
-         .yaml (por ejemplo, 01-netcfg.yaml).
-
-         Abre el archivo para editarlo:
-
-         <b>sudo nano /etc/netplan/01-netcfg.yaml</b>
-
-        2.Añadir los servidores DNS:
-
-        Busca la configuración de la red y añade o modifica las entradas nameservers para especificar los servidores DNS.
-        Asegúrate de que el archivo tenga un formato correcto (usa espacios en lugar de tabulaciones en YAML).
-        Aquí tienes un ejemplo de configuración:
-
-            network:
-                version: 2
-                ethernets:
-                    enp3s0:
-                     dhcp4: no
-                     addresses:
-                        - 192.168.1.10/24
-                     gateway4: 192.168.1.1
-                     nameservers:
-                        addresses:
-                         - 8.8.8.8
-                         - 8.8.4.4
-
-        Cambia enp3s0 por el nombre de tu interfaz de red. Puedes obtener el nombre de la interfaz con el comando ip link.
-
-        3.Aplicar los cambios:
-                         
-        Guarda y cierra el archivo. Luego, aplica los cambios de configuración con:
-
-            <b>sudo netplan apply</b>
-
-        <h3>sudo netplan apply</h3>
-
-
+        
         1. Instalación de BIND9
 
             Primero, instala BIND9 si aún no lo has hecho:

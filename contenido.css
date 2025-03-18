@@ -577,7 +577,8 @@ h6{
 }
 
 h7{
-    color: rgb(178, 211, 193);
+    color: rgb(255, 255, 255);
+    font-size:60px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
