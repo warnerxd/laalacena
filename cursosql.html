@@ -22,8 +22,8 @@
 
 <ol class="sql">
     <li class="bt n0"><a href="index.html"><img src="iconos/hacia_atras.png" alt=""></a></li>
-    <li class="bt n1"><a href="#1">Creación de bases de datos y tablas</a></li>
-    <li class="bt n2"><a href="#2">Consultas con restricciones</a></li>
+    <li class="bt n1"><a href="#1">Modulo 1</a></li>
+    <li class="bt n2"><a href="#2">Modulo 2</a></li>
     <li class="bt n3"><a href="#3"></a></li>
     <li class="bt n4"><a href="#4"></a></li>
     <li class="bt n5"><a href="#5"></a></li>
@@ -42,19 +42,161 @@
 
     <div class="tema" id="1">
 
-    <h3><a href="#i"><img class="it" src="iconos/github.png" alt="">  INICIO:</a>Consultas Query Sql:</h3>
+    <h3><a href="#i"><img class="it" src="iconos/github.png" alt="">  INICIO:</a>Bases de datos relacionales</h3>
 
     <pre>
+    * Una base de datos<strong>relacional</strong> es la recopilacion de elementos de datos
+      con relaciones predefinidas entre ellos. Estos elementos se organizan 
+      como un conjunto de tablas con columnas y filas. Las tablas se utilizan
+      para guardar informacion sobre objetos que se van a representar en la
+      base de datos.
+
+    * Es una base de datos relacional, cada fila de la tabla es un registro
+      con un ID unico llamado clave. Las columnas de la tabla contienen atributos 
+      de los datos. y cada registro geberalmente tiene un valor para cada atributo.
+
+    <h3>Vntajas de una base de datos relacional:</h3>   
+      la principal ventaja de una base de datos relacional es la sencillez del 
+      modelo relacional, permite manejar grandes cantitades de datos con puntos 
+      de relacion entre si, gestionandolos de forma segura y conforme a las normas.
+      Por ejemplo (Cundo hacemos una tranferencia bancaria y esta se refleja en la 
+      aplicacion del banco en nuestro movil de manera inmediata).    
         
-        
+
+    <h3>Tipos de BD relacionales</h3>  
+    El software utilizado para manejar una base de datos relacional es un sistema
+    de gestion de bases de datos relacionales <b>(RDBMS)</b>. Actualmente existen 
+    varios tipos de gestoresde BDR. Entre ellos, los mas usados son:
+    
+    <ul>
+        <li>ORACLE</li>
+        <li>MYSQL</li>
+        <li>MICROSOFT SQL SERVER </li>
+        <li>POSTGRESQL</li>
+    </ul>
+    <h3><a href="#i"><img class="it" src="iconos/github.png" alt="">  INICIO:</a>Bases de datos  NO relacionales</h3>
+
+    Las bases de datos no SQL estan diseñadas especificamente para modelos de datos
+    especificos y tienen esquemas flexibles para crear aplicaciones modernas. 
+    Las bases de datos NOSQL Son ampliamente reconocidas por que son faciles de 
+    desarrollar, por su funcionalidad y el rendimiem¿nto a escala.
+
+    Las dases de datos NOSQL utilizan una variedad de modelos de datos para acceder 
+    y adminirtrar los datos. Estos tipos de bases de datos estan optimizados para 
+    aplicaciones que requieren grandes volúmenes datos. baja latencia y modelos de 
+    datos flexibles. lo que se logra mediante las restricciones de coherencia de datos 
+    en otras bases de datos.
+
+  <h3>Vntajas de una base de datos relacional:</h3> 
+
+    Las bases de datos NoSQL se adaptan perfectamente a muchas aplicaciones modernas
+    dispositivos moviles, web y juegos, que requieren bases de datos flexibles escaladas 
+    , de alto rendimiento y altamente funcionalespara proporcionar excelentes 
+    eperiencias de usuarios.
+
+    <ul>
+      <li><b>Flexibilidad:</b>ofrecen esquemas felxibles que permiten un desarrollo
+        mas rapido y mas iterativo</li>
+      <li><b>Escalabilidad</b>Estan diseñadas para escalar usando clusteres
+      distribuidos de hardwareen lugar de escalar añadiendo servidores caros y solididos</li>
+      <li><b>Alto rendimieminto</b>Esta optimizada para modelos de datos especificos
+      y patrones de acceso que permiten un mayor redimiento. </li>
+      <li><b>Altemente funcional</b> proporcionan API altamente funcionales y tipos 
+        de datos que estan diseñados especificamente para cada uno de sus respectivos 
+        modelos de datos.
+
+      </li>
+
+    Algunos ejemplos de software empleado para manejar bases de datos no relacionales son:
+    
+    
+       <ul>
+        <li>AZURE</li>
+        <li>MONGO DB</li>
+        <li>CASSANDRA DB</li>
+        <li>REDIS</li>
+      </ul>
+      <h3><a href="#i"><img class="it" src="iconos/github.png" alt="">  INICIO:</a>Diferencia entre SQL Y NOSQL</h3>
+
+      <b>¿Una base de datos relacional vs no relacional?</b>
+
+      ¿Cuando nos comviene usar uno u otro tipo de base de datos?
+
+      Si conocimos de antemano la informacion que necesitamos registrar,
+      podremos diseñar la estructura de la base de datos relacional y las 
+      tablas que necesitamos para relacionarlas, de manera que sea sencillo 
+      y rapido acceder a los datos que queremos consultar en cada momento.
+      
+      Una base de datos no relacional no tiene un identificador que sirva
+      para relacionar un conjunto de datos con otro. Normalmente se emplea
+      cuando la información se organiza mediante documentos o cuando 
+      no tenemos un esquema exacto de lo que vamos a almacenar. 
+
+
+      <b>¿Que pasa cuando tengo gran volumenes de datos que manejar?</b>
+
+      Enfrentamos aqui a la base de datos relacional vs NoSQL o NO Only SQL
+      (no solo sql).Estas bases de datos sugirieron con la aparicion de las 
+      redes sociales y el incremento de datos que supieron. En principio 
+      no usan lenguajes SQL o si no lo hacen, es solo apoyo pero no realizan
+      las consultas. Si en bases de datos relacional, los atributos de un 
+      elemento están en diferentes columnas. Para realizar las consultas 
+      emplean lenguajes propíos como JSON,CQL O GQL y no permiten JOINS
+      Dado el gran volumen de datos a analizar   
+
+      <b>Concluciones SQL VS NO SQL</b>
+
+      <ul>
+        <li>Si tu empresa o negocio registra y al macena una gran cantidad de datos,
+          lo mas adecuado es descartarce po una base de datos No SQL que permita 
+          su manejo. En otras palabras, la bases de datos relacionales se quedan cortas 
+          para el analisis del bog data. 
+        </li>
+        <li>El mantenimiento de los servidores de la base No SQL es mas barato.</li>
+
+        <li>Las base de datos SQL Permite gestionar bases de datos juntos con las 
+          relacionesexistentes entre ellos.
+        </li>
+
+        <li>Las bases de datos SQL permiten gestionar datos juntos con las relaciones
+          existentes entre ellos.
+        </li>
+
+        <li>La sbases de datos SQL debido al largo tiempo que llevan en el mercado
+          tienen mayor soporte.
+        </li>
+
+      </ul>
+      <h3><a href="#i"><img class="it" src="iconos/github.png" alt="">  INICIO:</a>Como Diseñar una BD Relacional</h3>
+
+      En que momento del proyecto tenemos que diseñar una base de datos ?
+
+      Principalmente se comienza definiendo los requerimientos que va a tener el
+      sistema. Todo el SCOPE (que es lo que va hacer . Que funcionalidades va acumplir
+      . Etc)Despues se desarrollan pantallas de como se veria el sistema. Por ejemplo
+      si estamos desarrollando una plicacion movil : Vamos hacer el inicio de secion , 
+      ver el dashvoard .Como se abre la gestion de usuarios y se va observando todo el
+      flujo de pantalla en pantalla.
+
+      Al momento de diseñar la base de datos se identifican todos los componentes y se van 
+      armando la estructura de como deberia ser.
+
     </pre>
 
     </div>
     
     <div class="tema" id="2">
         <pre>
-        <h3><a href="#i"><img class="it" src="iconos/github.png" alt="">  INICIO:</a>Consultas con restricciones</h3>
-<img src="imagenes_sql/tabla_ondiciones_where.png" alt="">
+
+           <h3><a href="#i"><img class="it" src="iconos/github.png" alt="">  INICIO:</a>MODULO 2</h3>
+        
+
+
+
+
+
+
+
         </pre>
 
         

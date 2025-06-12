@@ -11,7 +11,9 @@
     display: flex;
     background-size: cover;
     background-position: 50%;
-    background-image: url(fondo_banners/html.jpg);
+    /*background-image: url(fondo_banners/html.jpg);*/
+     background-color: white;
+      opacity: 0.5;
     background-repeat: no-repeat;
 
 
@@ -636,3 +638,12 @@ color: blanchedalmond;
 }
 
 
+/*Listas ul
+
+*/
+
+li{
+    margin-left: 150px;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    
+}
