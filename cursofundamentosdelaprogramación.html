@@ -678,7 +678,7 @@
 
 
 
-
+        <b>EJEMPLO :</b>
 
             def selection_sort(arr):
         n = len(arr)
@@ -708,6 +708,8 @@
             <li>Dividir</li>
 
          </ul>
+
+         <b>EJEMPLO :</b>
         
         def merge_sort(arr):
             if len(arr) <= 1:
@@ -739,10 +741,175 @@
         print("Ordenado:", merge_sort(arreglo))
 
 
+    <h3>ORDENAMIENTO POR QUICKSORT</h3> 
+
+    Uso de pivote para dividir el arreglo y ordenar el arreglo.
 
 
+    <b>EJEMPLO :</b>
 
+            def quicksort(arr):
+            """
+            Ordenamiento Quicksort - El clásico algoritmo rápido
+            """
+                 if len(arr) <= 1:
+                return arr
             
+                print(f"🔁 Procesando: {arr}")
+            
+                # Elegir pivote (en este caso, el último elemento)
+                pivot = arr[-1]
+                print(f"   🎯 Pivote elegido: {pivot}")
+                
+                # Particionar
+                left = []
+                right = []
+                
+                for element in arr[:-1]:
+                    if element <= pivot:
+                        left.append(element)
+                        print(f"   ← {element} va a izquierda")
+                    else:
+                        right.append(element)
+                        print(f"   → {element} va a derecha")
+                
+                print(f"   📊 Left: {left}, Right: {right}")
+                print("-" * 50)
+                
+                # Recursión y combinación
+                return quicksort(left) + [pivot] + quicksort(right)
+
+        # Ejemplo de uso
+        arreglo = [10, 80, 30, 90, 40, 50, 70]
+        print("🎯 QUICKSORT - ORDENAMIENTO RÁPIDO")
+        print("=" * 50)
+        print(f"Arreglo original: {arreglo}")
+        print("=" * 50)
+
+        resultado = quicksort(arreglo.copy())
+        print(f"\n🎉 RESULTADO FINAL: {resultado}")
+
+
+        <h3>ORDENAMIENTO POR MONTICULOS</h3>
+        
+        <ul>
+            <li>Ordenamiento eficiente</li>
+            <li>Estructura de datos en monticulo</li>
+            <li>Contruye un monticulo a partir de la lista inicual</li>
+            <li>Extrae el elemento máximo del monticulo
+                y lo coloca al final de la lista
+            </li>
+            <li>La lista queda ordenada cuando el monticulo 
+                queda vacío.
+            </li>
+
+        </ul>
+
+        <b>EJEMPLO :</b>
+
+        import heapq
+
+        # Función que ordena una lista usando heapq y bucle for
+        def ordenar_con_heap(lista):
+            heapq.heapify(lista)  # Convertir la lista en un heap (min-heap)
+
+            ordenado = []
+            for _ in range(len(lista)):
+                menor = heapq.heappop(lista)  # Extraer el menor
+                ordenado.append(menor)
+
+            return ordenado
+
+        # Lista a ordenar
+        numeros = [7, 2, 9, 1, 5, 3]
+
+        # Llamar a la función
+        resultado = ordenar_con_heap(numeros.copy())  # Usamos .copy() para no modificar el original
+
+        # Mostrar resultado
+        print("Lista ordenada:", resultado)
+
+        <h3>ORDENAMIENTO POR CONTEO</h3>
+
+        Se basa en contar la frecuaencia de los elementos en la lista inicial
+        y despues reconstruir la lista ordenada utilizando estas frecuencias.
+
+         <b>EJEMPLO :</b>
+
+        def counting_sort(arr):
+            if not arr:
+                return []
+
+            # Encontrar el valor máximo
+            max_val = max(arr)
+
+            # Crear arreglo de conteo
+            conteo = [0] * (max_val + 1)
+
+            # Contar ocurrencias de cada número
+            for num in arr:
+                conteo[num] += 1
+
+            # Construir la lista ordenada
+            resultado = []
+            for i in range(len(conteo)):
+                resultado.extend([i] * conteo[i])  # Agrega i, conteo[i] veces
+
+            return resultado
+
+        # Ejemplo de uso
+        numeros = [4, 2, 2, 8, 3, 3, 1]
+        ordenado = counting_sort(numeros)
+        print("Lista ordenada:", ordenado)
+
+        <h3>ORDENAMIENTO RADIX</h3>
+
+        Es muy eficiente, pero solo funciona con números.
+
+         <b>EJEMPLO :</b>
+         
+    def counting_sort_por_digito(arr, exp):
+        n = len(arr)
+        salida = [0] * n
+        conteo = [0] * 10  # Dígitos del 0 al 9
+
+        # Contar ocurrencias de dígitos en la posición actual (exp)
+        for i in range(n):
+            indice = (arr[i] // exp) % 10
+            conteo[indice] += 1
+
+        # Convertir el conteo en posiciones acumuladas
+        for i in range(1, 10):
+            conteo[i] += conteo[i - 1]
+
+        # Construir el arreglo de salida (de forma estable)
+        i = n - 1
+        while i >= 0:
+            indice = (arr[i] // exp) % 10
+            salida[conteo[indice] - 1] = arr[i]
+            conteo[indice] -= 1
+            i -= 1
+
+        # Copiar la salida al arreglo original
+        for i in range(n):
+            arr[i] = salida[i]
+
+    def radix_sort(arr):
+        if not arr:
+            return
+
+        max_val = max(arr)
+
+        exp = 1  # Comenzar con unidades
+        while max_val // exp > 0:
+            counting_sort_por_digito(arr, exp)
+            exp *= 10
+
+    # Ejemplo de uso
+    numeros = [170, 45, 75, 90, 802, 24, 2, 66]
+    radix_sort(numeros)
+    print("Lista ordenada:", numeros)
+
 
 
 
