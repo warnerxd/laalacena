@@ -190,8 +190,75 @@
 
            <h3><a href="#i"><img class="it" src="iconos/github.png" alt="">  INICIO:</a>MODULO 2</h3>
         
+        <h3>Tipo de datos</h3>
 
+        Una de las caracteristicas principales de los campos,
+        ademas de su nombre es el tipo de datos que va a guardar
+        o almacenar. Esto define los posibles valores que se 
+        permitiran almacenar, la forma de guardarlos y hasta el
+        espacio requerido para cada columna.
 
+        Si bien cada SGBD <b>Sistema de gestor de base de datos</b>
+        tiene sus propios tipos de datos. Podemos clasificarlos en
+        los siguientes tipos.
+
+        <ul>
+          <li>Números</li>
+          <li>Texto</li>
+          <li>Fechas</li>
+          <li>Booleanos o Logicos</li>
+          <li>Otros particulares de casa SGBD</li>
+        </ul>
+
+         <h3>Tipo de datos Númericos:</h3>
+
+         Permite almacenar un nuemero. Dependiendo del espacio que
+         ocupan y la precision que tiene se puede desglozar en :
+         
+         <b>ENTEROS:</b>
+
+         Solo permite valores positivos y negativos sin punto decimal.
+         De los números son los que ocupan menos espacio y son excelentes
+         para guardar datos que no necesitan fracciones. 
+
+         <b>REALES:</b>
+        Son números , pero a diferencia de los enteros permite valores fraccionalrios.
+        Ocupan mas espacio y se guardan en un formato diferente a los enteros.
+        Son utiles cuando el campo a guardar puede contener fracciones décimales.
+        (Ejem: Salario,Porcentajes,Promedio).
+
+         <b>NÚMERICO, DECIMAL, PESOS:</b>
+
+         Son otro tipo de datos muy parecidos a los reales por que pueden guardar
+         valores décimales pero donde se tiene un poco más de control sobre la precisión.
+
+      
+        <h3>Tipo de datos Texto:</h3>
+
+        Permiten guardar caracteres de texto, donde un caracter
+        hasta textos muy grandes.No tienen formato y se pueden dividir en.
+
+         <b>Textos de longitud fija CHART:</b>
+
+        Cuya longitud siempre sera definida por el campo. Si un campo. Si 
+        un campo (nombre) es de longitud 100 por ejemplo y se guarda un (juan)
+        solo se usan 4 caracteres, los otros 96 no se ocupan; pero se apartan
+        siempre 10 caracteres para guardar el nombre.
+        
+         <b>Textos de longitud variable (VARCHAR):</b>
+
+         Cuya longitud máxima sera definida en el campo. Es decir el mismo 
+         ejemplo del punto anterior que (juan) solo ocupara 4 caracteres 
+         y aun que el nombre el nombre se haya definido de longitud 100, los 
+         otros 96 caracteres se despediran.
+
+         <b>Textos muy grandes:</b>
+
+         Son capaces de contener un libro completo. Este tipo de datos 
+         permite guardar textos muy extensos, pero se pierde en funcionalidad
+         de busqueda si lo comparamos con los dos anteriores.
+
+         
 
 
 
